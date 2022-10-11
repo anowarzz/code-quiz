@@ -5,12 +5,12 @@ const Header = () => {
   
     return (
       <div class="bg-gray-900">
-        <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div class="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div class="relative flex items-center justify-between">
             <a
               href="/"
-              aria-label="Company"
-              title="Company"
+              aria-label="Code Quiz"
+              title="Code Quiz"
               class="inline-flex items-center"
             >
               <svg
@@ -38,7 +38,7 @@ const Header = () => {
                   href="/"
                   aria-label="Home"
                   title="Home"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  class="font-medium tracking-wide text-white transition-colors duration-200 hover:bg-yellow-400 hover:text-black p-1 rounded"
                 >
                   Home
                 </a>
@@ -48,7 +48,7 @@ const Header = () => {
                   href="/"
                   aria-label="Topics"
                   title="Topics"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:bg-yellow-400 hover:text-black p-1 rounded"
                 >
                   Topics
                 </a>
@@ -58,7 +58,7 @@ const Header = () => {
                   href="/"
                   aria-label="Statistics"
                   title="Statistics"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:bg-yellow-400 hover:text-black p-1 rounded"
                 >
                     Statistics
                 </a>
@@ -68,7 +68,7 @@ const Header = () => {
                   href="/"
                   aria-label="Blog"
                   title="Blog"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:bg-yellow-400 hover:text-black p-1 rounded"
                 >
                   Blog
                 </a>
@@ -82,7 +82,7 @@ const Header = () => {
                 class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
                 onClick={() => setIsMenuOpen(true)}
               >
-                <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                <svg class="w-5 text-blue-600" viewBox="0 0 24 24">
                   <path
                     fill="currentColor"
                     d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
@@ -99,7 +99,7 @@ const Header = () => {
               </button>
               {isMenuOpen && (
                 <div class="absolute top-0 left-0 w-full">
-                  <div class="p-5 bg-white border rounded shadow-sm">
+                  <div class="p-5 bg-gray-700 border rounded shadow-sm">
                     <div class="flex items-center justify-between mb-4">
                       <div>
                         <a
@@ -145,13 +145,13 @@ const Header = () => {
                       </div>
                     </div>
                     <nav>
-                      <ul class="space-y-4 bg-lime-500 rounded pl-2">
+                      <ul class="space-y-4 bg-zinc-400 rounded pl-2">
                         <li>
                           <a
                             href="/"
                             aria-label="Home"
                             title="Home"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-500"
                           >
                             Home
                           </a>
@@ -161,7 +161,7 @@ const Header = () => {
                             href="/"
                             aria-label="Topics"
                             title="Topics"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:hover:text-red-500"
                           >
                             Topics
                           </a>
@@ -171,7 +171,7 @@ const Header = () => {
                             href="/"
                             aria-label="Statistics"
                             title="Statistics"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:hover:text-red-500"
                           >
                             Statistics
                           </a>
@@ -181,7 +181,7 @@ const Header = () => {
                             href="/"
                             aria-label="Blog"
                             title="Blog"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:hover:text-red-500"
                           >
                             Blog
                           </a>
