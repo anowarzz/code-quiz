@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const QuizCards = ({ quizNameCard }) => {
-  const { name, logo, total } = quizNameCard;
+  const {id,  name, logo, total } = quizNameCard;
+
 
   return <div className="bg-gray-700 rounded-md shadow-lg">
 
@@ -16,7 +18,9 @@ const QuizCards = ({ quizNameCard }) => {
 <div className="flex justify-around items-center md:w-9/12 w-96 mx-auto mb-8 mt-4">
 
     <h4 className="text-white text-xl font-bold"> Total <span className="text-yellow-500">{total}</span> Questions</h4>
-    <button className="bg-blue-600 px-4 py-2 rounded text-zinc-100 hover:bg-emerald-500 hover:text-black"> Take Test </button>
+    <Link to = {`/quiz/${id}`}>
+    <button className="bg-blue-600 px-4 py-2 rounded text-zinc-100 hover:bg-emerald-500 hover:text-black"> Start Quiz</button>
+    </Link>
 
 </div>
   </div>;

@@ -6,8 +6,6 @@ import QuizCards from '../QuizCards/QuizCards';
 const Home = () => {
 
 const quizCardsData = useLoaderData();
-
-console.log(quizCardsData);
 const quizCards = quizCardsData.data;
 
     return (
