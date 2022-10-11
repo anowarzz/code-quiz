@@ -1,19 +1,23 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import HeroSection from '../HeroSection/HeroSection';
+import QuizCards from '../QuizCards/QuizCards';
 
 const Home = () => {
 
-const quizCards = useLoaderData () ;
+const quizCardsData = useLoaderData();
+const quizCards = quizCardsData.data
 
 console.log(quizCards);
 
     return (
-        <div>
+        <div className='bg-zinc-800'>
             <HeroSection /> 
-            {
-                // quizCards.map(singleCard => console.log(singleCard))
+          <div className='grid grid-cols-2 gap-5 w-9/12 mx-auto mt-16'>
+          {
+                quizCards.map(quizNameCard => <QuizCards key={quizNameCard.id} quizNameCard = {quizNameCard}/>)
             }
+          </div>
         </div>
     );
 };
