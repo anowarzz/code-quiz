@@ -20,6 +20,7 @@ export const router = createBrowserRouter([
         },
         {
           path:'/',
+          loader: quizCardLoader,
           element: <Home />,
         },
         {
@@ -39,3 +40,4 @@ export const router = createBrowserRouter([
     
     
     ])
+
