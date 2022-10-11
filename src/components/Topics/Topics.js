@@ -10,14 +10,14 @@ const Topics = () => {
 
   return (
     <div className="bg-zinc-800">
-      <div className="py-8 w-96 mx-auto">
-        <h2 className="text-5xl font semibold text-indigo-500">
-          {" "}
-          Quiz of {name}
+      <div className="pt-8 mb-16 mx-auto">
+        <h2 className="text-5xl font semibold text-indigo-500 text-center">
+         
+          Quiz of <span className="text-yellow-600">{name}</span>
         </h2>
       </div>
 
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 w-[90%] mx-auto">
         {questions.map((singleQuestion) => (
           <Questions key={singleQuestion.id} singleQuestion={singleQuestion} />
         ))}
