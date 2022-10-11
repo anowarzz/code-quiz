@@ -5,7 +5,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
     return (
-      <div className="bg-gray-900">
+      <div className="bg-gray-900 z-20">
         <div className="px-4 py-6 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="relative flex items-center justify-between">
             <NavLink
@@ -80,7 +80,7 @@ const Header = () => {
               </li>
               
             </ul>
-            <div className="lg:hidden">
+            <div className="lg:hidden z-20">
               <button
                 aria-label="Open Menu"
                 title="Open Menu"
@@ -103,8 +103,8 @@ const Header = () => {
                 </svg>
               </button>
               {isMenuOpen && (
-                <div className="absolute top-0 left-0 w-full">
-                  <div className="p-5 bg-gray-700 border rounded shadow-sm">
+                <div className="absolute top-0 left-0 w-full z-20">
+                  <div className="p-5 bg-gray-700 rounded shadow-sm">
                     <div className="flex items-center justify-between mb-4">
                       <div>
                         <NavLink

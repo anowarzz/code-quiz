@@ -6,14 +6,12 @@ import QuizCards from '../QuizCards/QuizCards';
 const Home = () => {
 
 const quizCardsData = useLoaderData();
-const quizCards = quizCardsData.data
-
-console.log(quizCards);
+const quizCards = quizCardsData.data;
 
     return (
         <div className='bg-zinc-800'>
             <HeroSection /> 
-          <div className='grid grid-cols-2 gap-5 w-9/12 mx-auto mt-16'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mx-auto mt-16 md:w-9/12'>
           {
                 quizCards.map(quizNameCard => <QuizCards key={quizNameCard.id} quizNameCard = {quizNameCard}/>)
             }
