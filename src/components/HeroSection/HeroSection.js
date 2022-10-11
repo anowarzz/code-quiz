@@ -16,7 +16,7 @@ const HeroSection= () => {
                 <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
                   The quick, brown fox <br className="hidden md:block" />
                   jumps over a{' '}
-                  <span className="text-teal-accent-400">lazy dog</span>
+                  <span className="text-blue-500">lazy dog</span>
                 </h2>
                 <p className="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
