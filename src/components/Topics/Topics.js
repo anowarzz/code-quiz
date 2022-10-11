@@ -20,8 +20,8 @@ const Topics = () => {
       </div>
 
       <div className="flex flex-col gap-8 w-[90%] mx-auto">
-        {questions.map((singleQuestion) => (
-          <Questions key={singleQuestion.id} singleQuestion={singleQuestion} />
+        {questions.map((singleQuestion, idx) => (
+          <Questions key={singleQuestion.id} singleQuestion={singleQuestion} idx = {idx} />
         ))}
       </div>
     </div>

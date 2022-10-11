@@ -3,6 +3,8 @@ import Blog from "../components/Blog/Blog";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import Home from "../components/Home/Home";
 import Main from "../components/layouts/Main";
+import QuizCards from "../components/QuizCards/QuizCards";
+import QuizTopics from "../components/QuizTopics/QuizTopics";
 import Statistics from "../components/Statistics/Statistics";
 import Topics from "../components/Topics/Topics";
 import { quizCardLoader } from "./QuizCardsLoader";
@@ -22,10 +24,6 @@ export const router = createBrowserRouter([
           path:'/',
           loader: quizCardLoader,
           element: <Home />,
-        },
-        {
-          path:'/topics',
-          element: <Topics />,
         },
         {
           path:'/statistics',

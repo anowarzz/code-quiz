@@ -16,6 +16,7 @@ const quizCards = quizCardsData.data;
                 quizCards.map(quizNameCard => <QuizCards key={quizNameCard.id} quizNameCard = {quizNameCard}/>)
             }
           </div>
+      
         </div>
     );
 };
