@@ -8,6 +8,8 @@ const Topics = () => {
 
   const { name, id, questions } = quizTopic;
 
+
+
   return (
     <div className="bg-zinc-800">
       <div className="pt-8 mb-16 mx-auto">

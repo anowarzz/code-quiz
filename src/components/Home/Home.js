@@ -9,7 +9,7 @@ const quizCardsData = useLoaderData();
 const quizCards = quizCardsData.data;
 
     return (
-        <div className='bg-zinc-800'>
+        <div className='bg-zinc-800 pb-10'>
             <HeroSection /> 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mx-auto mt-16 md:w-9/12'>
           {

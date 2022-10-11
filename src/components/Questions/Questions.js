@@ -6,7 +6,10 @@ const Questions = ({singleQuestion}) => {
     const {question, options, correctAnswer } = singleQuestion
     console.log(question);
 
-  
+    
+
+
+    
     return (
         <div className='w-[90%] mx-auto border text-white bg-indigo-800 rounded my-6'>
            <h5 className='text-2xl font-mono m-5 font-bold'><span>Quiz No.  </span>{question}</h5>
