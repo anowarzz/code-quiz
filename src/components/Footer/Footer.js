@@ -1,17 +1,18 @@
-import React from 'react';
+import { faCopyright } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 
 const Footer = () => {
-    return (
-        <div className='py-10 bg-slate-800 text-gray-200 text-center'>
-
-            
-            <p className='pt-6'>Copy Right 2022 © All Right Reserved </p>
-
-            <br />
-            
-        </div>
-        
-    );
+  return (
+    <footer className="footer bg-gray-900 text-neutral-content pt-12">
+      <div className="text-gray-100 text-center py-6">
+        <p>All Rights Reserved</p>
+        <p>
+          Copyright <FontAwesomeIcon icon={faCopyright} /> 2022{" "}
+        </p>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

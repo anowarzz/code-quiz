@@ -6,8 +6,6 @@ const Topics = () => {
   const quizTopicData = useLoaderData();
   const quizTopic = quizTopicData.data;
 
-  console.log(quizTopic);
-  
   const { name, id, questions } = quizTopic;
 
   return (
@@ -18,7 +16,7 @@ const Topics = () => {
         </h2>
       </div>
 
-      <div className="flex flex-col gap-8 w-[90%] mx-auto">
+      <div className="flex flex-col gap-8 w-[80%] mx-auto col-span-3">
         {questions.map((singleQuestion, idx) => (
           <Questions
             key={singleQuestion.id}

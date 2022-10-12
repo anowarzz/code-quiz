@@ -17,12 +17,10 @@ const QuizCards = ({ quizNameCard }) => {
 
       <div className="flex lg:justify-between justify-around items-center md:w-9/12 w-96 mx-auto mb-8 mt-4">
         <h4 className="text-white text-xl font-bold">
-        
           Total <span className="text-yellow-500">{total}</span> Questions
         </h4>
         <Link to={`/quiz/${id}`}>
           <button className="pr-3  bg-blue-600 px-4 py-2 rounded text-zinc-100 hover:bg-emerald-500 hover:text-black">
-         
             Start Quiz
           </button>
         </Link>
