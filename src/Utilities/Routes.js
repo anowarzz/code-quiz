@@ -8,39 +8,38 @@ import Topics from "../components/Topics/Topics";
 import { quizCardLoader } from "./QuizCardsLoader";
 
 export const router = createBrowserRouter([
-    {
-      path:'/',
-      element: <Main />,
-      errorElement: <ErrorPage /> ,
-      children: [
-        {
-          path:'/',
-          loader: quizCardLoader,
-          element: <Home />,
+  {
+    path: "/",
+    element: <Main />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        loader: quizCardLoader,
+        element: <Home />,
+      },
+      {
+        path: "/home",
+        loader: quizCardLoader,
+        element: <Home />,
+      },
+      {
+        path: "/statistics",
+        element: <Statistics />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "quiz/:quizId",
+        loader: async ({ params }) => {
+          return fetch(
+            `https://openapi.programming-hero.com/api/quiz/${params.quizId}`
+          );
         },
-        {
-          path:'/home',
-          loader: quizCardLoader,
-          element: <Home />,
-        },
-        {
-          path:'/statistics',
-          element: <Statistics />,
-        },
-        {
-          path:'/blog',
-          element: <Blog />,
-        },
-        {
-            path: 'quiz/:quizId',
-            loader: async ({params}) => {
-                return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
-            },
-            element: <Topics />
-        }
-      ]
-    },
-    
-    
-    ])
-
+        element: <Topics />,
+      },
+    ],
+  },
+]);
