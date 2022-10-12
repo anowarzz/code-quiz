@@ -3,8 +3,9 @@
 A Programming Related Quiz Website To Improve Your Coding Skills.
 
 
-## Live Site Link
-Netlify  -> [Code Quiz](https://code-quiz-fun.netlify.app/)
+### Live Site Link
+Netlify  -> [Code Quiz](https://code-quiz-web.netlify.app/)
+
 
 ## Technologies Used in the project are below ===> 
 
@@ -18,6 +19,7 @@ Documentation -> [Link](https://reactrouter.com/en/main/start/overview)
 
 ### Resources Used 
 Tailwind -> [Tailwind](https://tailwindcss.com/)
+
 Components ->  [Kitwind](https://kitwind.io/products/kometa/components)
 
 ### Other Resources
