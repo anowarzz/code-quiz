@@ -4,23 +4,23 @@
 
 
 ### Live Site Link
-Netlify  -> [Code Quiz](https://code-quiz-web.netlify.app/)
+* Netlify  -> [Code Quiz](https://code-quiz-web.netlify.app/)
 
 
 ## Technologies Used in the project
 
 
 ### React
-Documentation -> [Link](https://reactjs.org/)
+* Documentation -> [Link](https://reactjs.org/)
 
 ### React Router Dom v6.4 
-Documentation -> [Link](https://reactrouter.com/en/main/start/overview)
+* Documentation -> [Link](https://reactrouter.com/en/main/start/overview)
 
 
 ### Resources Used 
-Tailwind -> [Tailwind](https://tailwindcss.com/)
+* Tailwind -> [Tailwind](https://tailwindcss.com/)
 
-Components ->  [Kitwind](https://kitwind.io/products/kometa/components)
+* Components ->  [Kitwind](https://kitwind.io/products/kometa/components)
 
 ### Other Resources
-Icon -> [React FontAwesome](https://fontawesome.com/v5/docs/web/use-with/react)
+* Icon -> [React FontAwesome](https://fontawesome.com/v5/docs/web/use-with/react)
