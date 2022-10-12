@@ -35,8 +35,14 @@ const Blog = () => {
             </h3>
 
             <p className='mt-6 text-lg'>
-            The Context API can be used to share data with multiple components, without having to pass data through props manually.
-            It makes it possible to pass data from parent to children nested deep down the component tree directly, instead of passing it down through a chain of props.It can be used to solve the same problems as Redux does, but it doesn’t provide a strict way of state manipulation to ensure predictable behavior. Despite its low-level nature, it might be the perfect solution in some cases
+            The useRef is a hook that allows to directly create a reference to the DOM element in the functional component. <br /> 
+
+<p className='m-4'>Syntax : <code className='pl-3 bg-black text-yellow-500 rounded-md p-2 my
+ font-light'>const refContainer = useRef(initialValue);</code>
+<br /></p>
+
+const refContainer = useRef(initialValue);
+The useRef returns a mutable ref object. This object has a property called .current. The value is persisted in the refContainer.current property. These values are accessed from the current property of the returned object. The .current property could be initialised to the passed argument initialValue e.g. useRef(initialValue). The object can persist a value for a full lifetime of the component. 
             </p>
         </div>
 
