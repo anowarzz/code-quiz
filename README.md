@@ -1,13 +1,13 @@
 # Welcome To Code Quiz
 
-A Programming Related Quiz Website To Improve Your Coding Skills.
+#### A Programming Related Quiz Website To Improve Your Coding Skills.
 
 
 ### Live Site Link
 Netlify  -> [Code Quiz](https://code-quiz-web.netlify.app/)
 
 
-## Technologies Used in the project are below ===> 
+## Technologies Used in the project
 
 
 ### React
