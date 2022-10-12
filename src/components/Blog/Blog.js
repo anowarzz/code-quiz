@@ -3,7 +3,7 @@ import React from "react";
 const Blog = () => {
   return (
     <div className="bg-zinc-700 h-full pb-12">
-      <h1 className="text-4xl font-bold text-center pt-10 text-green-400 hover:translate-x-1 hover:transform-x-1">
+      <h1 className="text-4xl font-bold text-center pt-8 pb-10 text-green-400 hover:text-indigo-500">
         Basic Concepts Of React Router
       </h1>
 
