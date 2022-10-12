@@ -1,16 +1,9 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
 
 const Statistics = () => {
-
-    const quizDataList = useLoaderData();
-
-    console.log(quizDataList);
-  
-
     return (
         <div>
-            <h3>This is statistics</h3>
+        <h3 className="text-3xl text-center">THis is statistics</h3>
         </div>
     );
 };

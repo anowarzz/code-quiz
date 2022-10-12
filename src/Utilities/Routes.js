@@ -25,10 +25,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/statistics",
-        loader: async ({ params }) => {
-          return fetch(
-            `https://openapi.programming-hero.com/api/quiz/${params.quizId}`
-          );},
+        loader: quizCardLoader,
         element: <Statistics />,
       },
       {
@@ -37,7 +34,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "quiz/:quizId",
-        loader: async ({ params }) => {
+        loader: async ({params}) => {
           return fetch(
             `https://openapi.programming-hero.com/api/quiz/${params.quizId}`
           );

@@ -6,6 +6,8 @@ const Topics = () => {
   const quizTopicData = useLoaderData();
   const quizTopic = quizTopicData.data;
 
+  console.log(quizTopic);
+  
   const { name, id, questions } = quizTopic;
 
   return (
