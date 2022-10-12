@@ -15,12 +15,12 @@ const QuizCards = ({ quizNameCard }) => {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row lg:justify-between justify-around items-center md:w-9/12 w-96 mx-auto mb-8 mt-4">
+      <div className="flex flex-col lg:justify-between items-center md:w-9/12  mx-auto mb-8 mt-4">
         <h4 className="text-white text-xl font-bold">
           Total <span className="text-yellow-500">{total}</span> Questions
         </h4>
         <Link to={`/quiz/${id}`}>
-          <button className="pr-3  bg-blue-600 px-4 py-2 mt-4 lg:mt-0 rounded text-zinc-100 hover:bg-emerald-500 hover:text-black">
+          <button className="bg-blue-600 px-4 py-2 mt-4 rounded text-zinc-100 hover:bg-emerald-500 hover:text-black">
             Start Quiz
           </button>
         </Link>
