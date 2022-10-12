@@ -24,11 +24,11 @@ const Questions = ({ singleQuestion, idx }) => {
   };
 
   return (
-    <div className="w-[90%] mx-auto border text-white bg-indigo-800 rounded my-6 relative col-span-3">
+    <div className="lg:w-[90%] w-auto  mx-auto  text-white bg-indigo-800 rounded my-6 relative ">
       <div className="flex justify-between">
         <h5 className="text-2xl font-mono m-5 font-semibold">
           <span>
-            Quiz No- <span className="text-red-500 font-bold">{qIndex}</span>
+            Quiz No-<span className="text-red-500 font-bold pr-2">{qIndex}</span>
           </span>
           {question}
         </h5>
