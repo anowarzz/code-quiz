@@ -213,7 +213,7 @@ const Header = () => {
 
                       <li className="pb-4">
                         <NavLink
-                          to="/"
+                          to="/about"
                           aria-label="About"
                           title="About Us"
                           className={({ isActive }) =>
