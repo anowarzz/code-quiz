@@ -114,7 +114,7 @@ const Header = () => {
                           className="inline-flex items-center"
                         >
                           <svg
-                            className="w-8 text-red-500"
+                            className="w-8 text-blue-500"
                             viewBox="0 0 24 24"
                             strokeLinejoin="round"
                             strokeWidth="2"
@@ -137,7 +137,7 @@ const Header = () => {
                         <button
                           aria-label="Close Menu"
                           title="Close Menu"
-                          className="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                          className="p-2 -mt-2 bg-gray-500 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                           onClick={() => setIsMenuOpen(false)}
                         >
                           <svg className="w-5 text-gray-600" viewBox="0 0 24 24">

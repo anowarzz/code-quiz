@@ -38,7 +38,7 @@ const Questions = ({ singleQuestion, idx }) => {
       </h5>
      <button className="absolute top-1 right-2">
 
-     <FontAwesomeIcon onClick={() => showCorrectAns()} className="text-zinc-300 text-2xl font-bold hover:text-yellow-600 "  icon={faEye}/></button>
+     <FontAwesomeIcon title="Show Correct Ans" onClick={() => showCorrectAns()} className="text-zinc-300 text-2xl font-bold hover:text-yellow-600 "  icon={faEye}/></button>
 
 
      </div>
